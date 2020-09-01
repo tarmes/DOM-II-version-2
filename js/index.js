@@ -76,3 +76,19 @@ document.addEventListener('wheel', evt => {
     })
 })
 
+
+// Prevent Default
+
+// allLinks.forEach(link => {
+//     link.preventDefault();
+//   })
+
+// Stop Propogation
+
+const propTest = document.querySelector('.content-destination'); 
+console.log(propTest)
+
+propTest.addEventListener('click', evt => {
+    evt.target.style.color = 'black';
+})
+
