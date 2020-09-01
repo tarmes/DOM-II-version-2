@@ -34,5 +34,24 @@ document.addEventListener('keydown', evt => {
     }
 })
 
+// Double Click
+
+const bigPic = document.querySelector('.intro img');
+
+bigPic.addEventListener('dblclick', evt => {
+    evt.target.src = 'https://images.unsplash.com/photo-1520105072000-f44fc083e508?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80'
+})
+
+// Keyup
+
+document.addEventListener('keyup', evt => {
+    if (event.key === 'b') {
+        introBomb.textContent = 'Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.'
+        introBomb.style.fontSize = '1em'
+        introBomb.style.color = 'black'
+    }
+})
+
+
 
 
