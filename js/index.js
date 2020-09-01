@@ -52,6 +52,27 @@ document.addEventListener('keyup', evt => {
     }
 })
 
+// Scroll
 
+const allTexts = document.querySelectorAll('p');
 
+document.addEventListener('scroll', evt => {
+    allTexts.forEach(text => {
+        text.style.color = 'red';
+    })
+})
+
+allLinks.forEach(link => {
+    link.style.fontSize = '2em'
+  })
+
+// Wheel
+
+const allHeads = document.querySelectorAll('h2');
+
+document.addEventListener('wheel', evt => {
+    allHeads.forEach(header => {
+        header.style.color = 'green';
+    })
+})
 
